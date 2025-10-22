@@ -1,0 +1,281 @@
+@font-face {
+ font-family: 'Marshland Beauty';
+ src: url('../fontes/Marshland_Beauty.ttf');
+}
+
+@font-face {
+ font-family: 'Bahnschrift';
+ src: url('../fontes/bahnschrift.ttf');
+}
+
+ul {
+  padding-left: 0;
+}
+
+body {
+ background-color: #0C0C0C;
+ color: #fff;
+  font-family: 'Bahnschrift', sans-serif;
+}
+
+h1, h2 {
+ font-family: 'Marshland Beauty', sans-serif;
+}
+
+main {
+ text-align: center;
+ margin: 0 auto;
+}
+
+img {
+ border-radius: 30px;
+}
+
+footer {
+ background-color: #111;
+ padding: 6rem 0;
+ margin-top: 6rem;
+}
+
+footer a {
+ border-radius: 50%;
+    border: 1px solid #B5AED1;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer svg {
+ fill: #fff;
+ height: 30px;
+}
+
+footer ul {
+ list-style: none;
+justify-content: center;
+}
+
+footer ul li {
+ margin: 0 2rem;
+}
+
+h2 {
+ margin-bottom: 1.5rem;
+ font-size: 72px;
+ position: relative;
+ display: inline-block;
+}
+
+h2::after, h2::before {
+ content: '';
+ width: 22px;
+ height: 30px;
+ position:absolute;
+ transform: translateY(-50%);
+ background-image: url('../img/star.svg');
+ background-size: contain;
+ background-repeat: no-repeat;
+ top: 40px;
+}
+
+h2::before {
+  left: -30px;
+}
+
+h2::after {
+  right: -30px; 
+}
+
+.scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: #0C0C0C;
+}
+
+.scrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #0C0C0C;
+}
+
+.scrollbar::-webkit-scrollbar-thumb
+{
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #B5AED1;
+}
+
+.inicial {
+ height: 100vh;
+ display: flex;
+ justify-content: center;
+ flex-direction: column;
+ background: url('../img/textura.png');
+}
+
+.inicial img {
+ height: 229px;
+ border-radius: 0;
+}
+
+.inicial h1 {
+ font-size: 80px;
+}
+
+.inicial h5 {
+ font-size: 28px;
+}
+
+.ap-projeto {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-evenly;
+}
+
+.ap-projeto img {
+ width: 552px;
+ height: 552px;
+ object-fit: cover;
+ transition: all .5s linear;
+}
+
+.ap-projeto a {
+ display: flex;
+ flex-direction: column;
+ position: relative;
+ text-decoration: none;
+}
+
+.ap-projeto span {
+ position: absolute;
+ bottom: 2rem;
+ left: 2rem;
+ color: #fff;
+ padding: 12px 15px;
+}
+
+.ap-projeto a img:hover {
+  -webkit-transform: scale(1.03);
+  transform: scale(1.03);
+  transition: all .5s linear;
+}
+
+.ap-projeto svg {
+ margin-left: .5rem;
+ transform: rotate(180deg);
+}
+
+.detalhe-projeto {
+ text-align: center;
+}
+
+.head-d-projeto {
+ height: 53vh;
+ display: flex;
+ align-items: center;
+ background: url(../img/textura.png);
+}
+
+.head-d-projeto h2::before,
+.head-d-projeto h2::after {
+ content: none;
+}
+
+.detalhe-projeto img {
+ margin-bottom: 3rem;
+ width: 100%;
+ height: auto;
+}
+
+.link-voltar {
+ color: #fff;
+ text-decoration: none;
+}
+
+.btn-whats {
+  background-color: #B5AED1;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 150px;
+  border: 3px solid #f2f2f2;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
+
+.btn-whats svg {
+ fill: #fff;
+ height: 40px;
+}
+
+/* Responsivo */
+@media screen and (max-width: 1199px) {
+  .ap-projeto a {
+    margin-bottom: 3rem;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .ap-projeto img {
+    height: 516px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .ap-projeto img {
+    height: 320px;
+    width: 320px;
+  }
+
+  h1 {
+    font-size: 40px !important;
+  }
+
+  h2 {
+    font-size: 36px;
+  }
+
+  .inicial h5 {
+    font-size: 18px;
+  }
+
+  footer ul li {
+    margin: 0 .5rem;
+  }
+
+  .inicial img {
+    height: 169px;
+  }
+
+  h2::after, h2::before {
+    width: 12px;
+    top: 30px;
+  }
+
+  h2::after {
+    right: -20px;
+  }
+
+  h2::before {
+    left: -20px;
+  }
+
+  footer a {
+    width: 50px;
+    height: 50px;
+  }
+
+  footer svg {
+    height: 25px;
+  }
+
+  .detalhe-projeto img {
+    border-radius: 15px;
+  }
+}
