@@ -147,6 +147,7 @@ h2::after {
  flex-direction: column;
  position: relative;
  text-decoration: none;
+ margin-bottom: 3rem;
 }
 
 .ap-projeto span {
