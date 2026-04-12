@@ -12,6 +12,14 @@ ul {
   padding-left: 0;
 }
 
+li {
+  list-style: none !important;
+}
+
+a {
+  text-decoration: none !important;
+}
+
 body {
  background-color: #0C0C0C;
  color: #fff;
@@ -214,6 +222,14 @@ h2::after {
  fill: #fff;
  height: 40px;
 }
+
+.link {
+  color: #B5AED1;
+  font-size: 2.5rem;
+  margin-top: 2rem;
+  display: block;
+}
+
 
 /* Responsivo */
 @media screen and (max-width: 1199px) {
