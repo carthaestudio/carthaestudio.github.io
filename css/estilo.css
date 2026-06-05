@@ -59,7 +59,7 @@ footer a {
     justify-content: center;
 }
 
-.contact-icons svg {
+.contact-icons svg, footer a svg {
  fill: #fff;
  height: 30px;
 }
